@@ -1,0 +1,28 @@
+p {
+    display: none;
+}
+
+#slow {
+    width: 200px;
+    position: relative;
+    animation: mymove 10s infinite;
+}
+
+#fast {
+    width: 175px;
+    animation: spin 4s linear infinite
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 1000px;}
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
